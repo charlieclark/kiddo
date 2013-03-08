@@ -1,0 +1,596 @@
+html, body, h1, h2, h3, ul, li, img, p{ margin: 0; padding:0 ; background-color: none}
+ul,ol{list-style: none}
+a{text-decoration: none}
+
+@font-face{
+	font-family: Orator;
+	src: url("OratorStd.otf");
+
+}
+
+html{
+
+}
+
+body{
+	background: url(images/background.jpg) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+height: 100%;
+}
+
+#container{
+	
+	position: relative;	
+	
+}
+
+.spinner{
+	background: url("elements/loader.gif") 50% 50% no-repeat;
+}
+/*splash*/
+
+#splashPage {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+#image-sequence-container {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#image-sequence-container img{
+    max-height: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+#splash-date {
+    position: absolute;
+    bottom: 10px;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-family: Orator , "Courier" , monospace;
+    font-size: 38px;
+}
+
+
+/* NAVIGATION */
+
+#navContainer{
+position: fixed;
+width: 1026px;
+left: 50%;
+top:0;
+margin-left: -522px;
+padding-top: 11px;
+z-index:998;
+display: none;
+
+}
+
+#navContainer2{
+position: fixed;
+width: 100%;
+top:0;
+height: 0;
+
+z-index:999;
+background-color: #6986c0;
+
+
+transition: height 1s;
+-moz-transition: height 1s; /* Firefox 4 */
+-webkit-transition: height 1s; /* Safari and Chrome */
+-o-transition: height 1s;
+}
+
+#navContainer2.active{
+height: 80px;
+
+transition: height 1s;
+-moz-transition: height 1s; /* Firefox 4 */
+-webkit-transition: height 1s; /* Safari and Chrome */
+-o-transition: height 1s;
+
+}
+
+
+#navContainer h1{
+float: left;
+width: 219px;
+height: 60px;
+
+text-indent: -9999px;
+background: url("elements/logo.png") no-repeat;
+background-size: contain;
+}
+
+#navContainer h1:hover{
+opacity: 0.7;
+}
+
+ul#navigation
+{
+list-style: none;
+}
+
+
+ul#navigation li
+{
+	margin-top: 15px;
+	float: left;
+	height: 53px;
+	text-indent: -9999px;
+	background-position: 0 54px;
+}
+
+ul#navigation li#live
+{
+padding: 0 5px 0 5px;
+	width: 110px;
+	background-image: url("elements/live_button.png");
+}
+
+ul#navigation li#video
+{
+	width: 110px;
+	background-image: url("elements/video_button.png");
+}
+
+ul#navigation li#music
+{
+	width: 126px;
+	background-image: url("elements/music_button.png");
+}
+
+ul#navigation li#pictures
+{
+	width: 147px;
+	background-image: url("elements/picture_button.png");
+}
+
+ul#navigation li#about
+{
+	width: 132px;
+	background-image: url("elements/about_button.png");
+}
+
+ul#navigation li#contact
+{
+	width: 172px;
+	background-image: url("elements/contact_button.png");
+}
+
+/*Nav INTERACTION */
+
+ul#navigation li:hover{
+background-position:	0 0;
+}
+
+/* CONTENT */
+.social
+{
+	float: left;
+
+	width: 50px;
+	height: 50px;
+	opacity: 0.7;
+	margin-left: 20px;
+}
+
+img.social{
+width: auto;
+}
+
+.social:hover
+{
+	opacity: 1;
+}
+
+#facebook
+{
+	background-image: url("elements/fb_icon.png"); 
+}
+
+#twitter
+{
+	background-image: url("elements/tw_icon.png");
+}
+
+#itunes
+{
+	margin-left: 20px;
+	padding-top: 10px;
+}
+
+
+
+#socialContainer
+{
+position: absolute;
+top: -88px;
+margin-top: 0;
+width: 350px;
+height: 100px;
+left: 193px;
+}
+
+
+#socialContainer2
+{
+z-index: 999;
+visibility: hidden;
+position: fixed;
+top: 175px;
+left: -65px;
+width: 65px;
+height: auto;
+padding-bottom: 10px;
+background-color: rgba(0,0,0,0.2);
+overflow: hidden;
+}
+
+
+#socialContainer2 .social
+{
+
+float: left;
+clear: both;
+margin-top: 10px;
+margin-left: 5px;
+
+}
+
+#fbookCount{
+
+cursor: default;
+opacity: 1;
+
+
+}
+
+
+
+
+/* SECTION */
+
+#sectionContainer
+{
+
+margin: 0 auto 0 auto;
+width: 800px;
+
+position: relative;
+
+}
+
+.section
+{
+position: relative;
+	clear: both;
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 60px 0 60px 0;
+	
+	margin-bottom: 40px;
+margin-top: 105px;
+}
+
+.section p
+{
+	color: white;
+	display: block;
+	width: 600px;
+	margin: auto;
+	/* font-family: "Futura" , "Helvetica"; */
+}
+
+.titleImage
+{
+position: absolute;
+display: block;
+top: 15px;
+right: 30px;
+}
+
+
+/*image gallery*/
+
+#picturesSection{
+
+}
+
+#galleryContainer{
+	position: relative;
+	width: 490px;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 700px;
+	margin: 0 auto;
+}
+
+#slide-container{
+	position: absolute;
+}
+
+.galleryImage{
+width: 450px;
+display: inline-block;
+margin: 0 20px 0 20px;
+}
+
+.arrow-button{
+margin-top: 350px;
+z-index: 997;
+position: absolute;
+width: 60px;
+height: 60px;
+transition: all 0.5s;
+-moz-transition: all 0.5s; /* Firefox 4 */
+-webkit-transition: all 0.5s; /* Safari and Chrome */
+-o-transition: all 0.5s;
+cursor: pointer;
+
+}
+.arrow-button:hover{
+width: 80px;
+height: 80px;
+margin-left: -10px;
+margin-top: 340px;
+transition: all 0.5s;
+-moz-transition: all 0.5s; /* Firefox 4 */
+-webkit-transition: all 0.5s; /* Safari and Chrome */
+-o-transition: all 0.5s;
+
+
+
+}
+
+.arrow-button.right{
+	background: url("elements/button-arrow-right.png") no-repeat;
+	background-size: contain;
+	right:50px;
+}
+
+.arrow-button.left{
+	background: url("elements/button-arrow-left.png") no-repeat;
+	background-size: contain;
+	left: 50px;
+	
+}
+
+
+
+
+
+
+iframe
+{
+display: block;
+width: 600px;
+margin: 0 auto;
+}
+
+
+/* specific section */
+
+#contactSection div{
+cursor: pointer;
+width: 400px;
+font-family: Orator , "Courier" , Monospace;
+font-size: 26px;
+text-align: center;
+padding: 5px 3px;
+padding-bottom: -50px;
+margin-bttom: 50px;
+}
+
+#contactSection span{
+padding-top: 100px;
+display: block;
+margin: 0 auto;
+width: 400px;
+color: white;
+font-family: Orator , "Courier" , Monospace;
+font-size: 14px;
+text-align: center;
+}
+
+#contactSection a{
+text-decoration: underline;
+color: white;
+
+}
+
+#email1{
+margin: 10px auto 0 auto;
+
+background-color: #F2DAC6;
+}
+
+
+#email2{
+position: relative;
+left: 30px;
+margin: 10px auto 0 auto;
+background-color: #FFFFFF;
+}
+
+
+/* live section */
+
+#liveSection
+{
+height: auto;
+}
+
+#liveSection h3
+{
+color: white;
+width: 100%;
+margin: 20px auto;
+text-align: center;
+font-family: Orator , "Courier" , Monospace;
+font-size: 36px;
+}
+
+#liveSection p
+{
+color: white;
+text-align: center;
+font-family: Orator , "Courier" , Monospace;
+font-size: 16px;
+display: block;
+height: 65px;
+}
+
+#liveSection a
+{
+color: white;
+
+}
+
+#liveSection a:hover
+{
+color: #6986c0;
+font-size: 18px;
+
+}
+
+#liveSection span
+{
+display: block;
+font-size: 22px;
+margin: 25px 0 10px 0;
+color: white;
+
+}
+
+/*music section*/
+
+.musicSection h2,h3{
+
+	padding: 10px 0;
+color: white;
+font-size: 2.2em;
+font-family: Orator;
+text-align: center;
+
+}
+
+
+.musicSection h3{
+margin: -10px 0 10px 0;
+font-size: 1.2em;
+
+
+}
+
+.musicSection iframe{
+
+	margin-bottom: 51px;
+
+}
+
+#singlesList{
+	height: 188px;
+	width: 700;
+	margin: auto;
+
+}
+
+#singlesList li{
+	margin-left: 19px;
+	float: left;
+	display: inline-block;
+	text-align: center;
+
+}
+
+#singlesList h3{
+	
+	color: white;
+	font-family: Orator;	
+}
+
+#singlesList li img{
+	margin: 5px 0 10px 0;
+	opacity: 1;
+	width: 150px;
+
+}
+
+
+#singlesList a , #albumContainer a{
+	display: inline-block;
+	margin-top: 10px;
+	color: white;
+	font-family: Orator , "Courier" , Monospace;
+
+}
+
+#singlesList a:hover , #albumContainer a:hover{
+	opacity: 0.8;
+
+}
+
+#singlesList .break{
+	display: inline-block;
+	width: 5px;
+}
+
+.musicSection .albumContainer{
+	text-align: center;
+	margin: 20px 0 48px 0;
+}
+
+.musicSection .albumContainer img:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+/* temporary stuff */
+
+#topSection{
+	height: 260px;
+	margin-top: 200px;
+}
+
+.topSection h3 {
+margin-top: -33px;
+}
+
+.topSection {
+    width: 50%;
+    float: left;
+}
+
+.twtr-doc{
+
+margin: 0 auto;
+
+}
+
+.twtr-tweet{
+
+padding: 10px;
+
+}
+
+#aboutSection p{
+
+font-family: "Futura" , "Helvetica" , sans-serif;
+
+}
